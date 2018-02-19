@@ -18,9 +18,11 @@ public class Bms2Mp3 {
 	public static void main(String[] args){
 		if(Objects.isNull(args)){
 			System.err.println("Bms2Mp3 requires argument : bms_path");
+			System.exit(1);
 		}
 		if(args.length != 1){
 			System.err.println("Bms2Mp3 requires argument : bms_path");
+			System.exit(1);
 		}
 
 		Converter converter = new Converter(bmx2wavDir, lameDir);

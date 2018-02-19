@@ -38,6 +38,7 @@ public class Converter {
 	private void toMp3(final String wavPath){
 		System.out.println("convert wav to mp3. wav_path = " + wavPath);
 
+		// TODO: add mp3 tags... --tt <title> --ta <artist>
 		final String command = String.format("lame.exe -b 320 \"%s\" \"%s\\mp3\\%s.mp3\"",
 				wavPath, System.getProperty("user.dir"), musicName);
 
